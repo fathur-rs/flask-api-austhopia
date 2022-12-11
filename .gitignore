@@ -1,3 +1,4 @@
 __pychache__
 env/
 app_name/__pycache__
+*.env
