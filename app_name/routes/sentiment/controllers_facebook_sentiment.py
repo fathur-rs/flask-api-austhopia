@@ -15,7 +15,7 @@ models_path = os.path.abspath(os.path.join(__file__, "../model/")) + "/"
 model = joblib.load(os.path.join(models_path, "fb_sentiment.pkl"))
 
 
-@blueprint_facebook_sentiment.route("/api/sentiment/facebook", methods=["GET"])
+@blueprint_facebook_sentiment.route("/api/sentiment/facebook", methods=["POST"])
 def FacebookSentiment():
     try:
         data = request.json
