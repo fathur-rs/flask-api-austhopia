@@ -1,6 +1,8 @@
 from app_name import app
 from flask_cors import CORS
+import os
 from dotenv import load_dotenv
+load_dotenv()
 
 cors = CORS(
             app, 
@@ -8,4 +10,4 @@ cors = CORS(
             )
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0')
+    app.run(debug=True, host=os.getenv('HOST'), port=os.getenv('PORT'))
