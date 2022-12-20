@@ -9,5 +9,5 @@ def index():
 
 
 # import blueprint
-from .routes.sentiment.controllers_facebook_sentiment import blueprint_facebook_sentiment
-app.register_blueprint(blueprint_facebook_sentiment)
+from .routes.sentiment.controllers_sentiment import blueprint_sentiment
+app.register_blueprint(blueprint_sentiment)

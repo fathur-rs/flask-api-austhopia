@@ -2,3 +2,4 @@ __pychache__
 env/
 app_name/__pycache__
 
+app_name/routes/sentiment/__pycache__
